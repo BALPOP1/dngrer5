@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP Landing Pages - Agent Directory</title>
+    <link rel="icon" href="https://i.ibb.co/DfxW0xL5/image.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #6B73FF 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .header-title {
+            font-size: 32px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .header-subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .agent-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .agent-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .agent-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .agent-name {
+            font-size: 18px;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        .agent-folder {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 16px;
+        }
+
+        .agent-folder span {
+            color: #667eea;
+        }
+
+        .agent-tags {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 6px;
+            color: white;
+        }
+
+        .tag-layout {
+            background: linear-gradient(135deg, #4a5568, #2d3748);
+        }
+
+        .tag-style {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .view-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 14px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .view-btn:hover {
+            background: linear-gradient(135deg, #5a6fd6 0%, #6a4190 100%);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 12px;
+        }
+
+        @media (max-width: 640px) {
+            .header-title {
+                font-size: 24px;
+            }
+
+            .agent-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-icon">📋</div>
+            <h1 class="header-title">All Landing Pages</h1>
+            <p class="header-subtitle">Select an agent to view their landing page</p>
+        </header>
+        <div class="agent-grid">
+            <!-- Row 1 -->
+            <div class="agent-card">
+                <h2 class="agent-name">VITÓRIA ANDRESSA</h2>
+                <p class="agent-folder">Folder: <span>vitoria</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 1</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/vitoria/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">HELOISA</h2>
+                <p class="agent-folder">Folder: <span>heloisa</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 2</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/heloisa/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">HARLEN</h2>
+                <p class="agent-folder">Folder: <span>harlen</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 3</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/harlen/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">NICOLA DA SILVA</h2>
+                <p class="agent-folder">Folder: <span>nicola</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 4</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/nicola/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <!-- Row 2 -->
+            <div class="agent-card">
+                <h2 class="agent-name">MARILYN</h2>
+                <p class="agent-folder">Folder: <span>marilyn</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 5</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/marilyn/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">DAIANE OLIVIA</h2>
+                <p class="agent-folder">Folder: <span>daiane</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 6</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/daiane/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">MATHEUS JOSE ANDRE</h2>
+                <p class="agent-folder">Folder: <span>matheus</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 1</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/matheus/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">RAFAEL NOGUEIRA</h2>
+                <p class="agent-folder">Folder: <span>rafael</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 2</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/rafael/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <!-- Row 3 -->
+            <div class="agent-card">
+                <h2 class="agent-name">NATHAN MATHEUS</h2>
+                <p class="agent-folder">Folder: <span>nathan</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 3</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/nathan/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">BERNARDO REIS</h2>
+                <p class="agent-folder">Folder: <span>bernardo</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 4</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/bernardo/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">HENRIQUE DA SILVA</h2>
+                <p class="agent-folder">Folder: <span>henrique</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 5</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/henrique/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">JOSEPHINE</h2>
+                <p class="agent-folder">Folder: <span>josephine</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 6</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/josephine/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <!-- Row 4 -->
+            <div class="agent-card">
+                <h2 class="agent-name">VICTORIA</h2>
+                <p class="agent-folder">Folder: <span>victoria</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 1</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/victoria/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">LUIZ GUSTAVO</h2>
+                <p class="agent-folder">Folder: <span>luiz</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 2</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/luiz/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">CARLOS SILVA</h2>
+                <p class="agent-folder">Folder: <span>carlos</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 3</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/carlos/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">POPAGENTE888 VIP</h2>
+                <p class="agent-folder">Folder: <span>popagente888</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 4</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/popagente888/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <!-- Row 5 -->
+            <div class="agent-card">
+                <h2 class="agent-name">LUCAS FERREIRA</h2>
+                <p class="agent-folder">Folder: <span>lucas</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 5</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/lucas/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">GERENTE BENEDITTO</h2>
+                <p class="agent-folder">Folder: <span>gerente</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 6</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/gerente/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">MENTORMAXWELL GUIA</h2>
+                <p class="agent-folder">Folder: <span>maxwell</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 1</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/maxwell/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">ETHAN SAG</h2>
+                <p class="agent-folder">Folder: <span>ethan</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 2</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/ethan/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <!-- Row 6 -->
+            <div class="agent-card">
+                <h2 class="agent-name">MARCOS RIBEIRO</h2>
+                <p class="agent-folder">Folder: <span>marcos</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 3</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/marcos/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">GABRIELA FREITAS</h2>
+                <p class="agent-folder">Folder: <span>gabriela</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 4</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/gabriela/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">ANA LIMA</h2>
+                <p class="agent-folder">Folder: <span>ana</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 5</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/ana/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">LETICIA MUNIZ</h2>
+                <p class="agent-folder">Folder: <span>leticia</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 6</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/leticia/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <!-- Row 7 -->
+            <div class="agent-card">
+                <h2 class="agent-name">AMANDA SOUZA</h2>
+                <p class="agent-folder">Folder: <span>amanda</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 1</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/amanda/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+            <div class="agent-card">
+                <h2 class="agent-name">GUILHERME FELLIPE</h2>
+                <p class="agent-folder">Folder: <span>guilherme</span></p>
+                <div class="agent-tags"><span class="tag tag-layout">Layout 2</span><span
+                        class="tag tag-style">Elegant</span></div><a href="./agents/guilherme/index.html"
+                    class="view-btn"><span>View Page</span><span>→</span></a>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>POP Agent Landing Pages Directory • Internal Use Only</p>
+        </footer>
+    </div>
+</body>
+
+</html>
